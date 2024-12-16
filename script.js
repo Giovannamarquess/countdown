@@ -19,9 +19,11 @@ function updateCountdown() {
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
   } else {
-
+    
 // Quando o tempo acabar, será exibida a mensagem abaixo
-    document.getElementById("countdown").textContent = "Promoção Encerrada!";
+      const countdown = document.getElementById("countdown");
+      countdown.innerHTML = "Promoção Encerrada!";
+      countdown.classList.add("ended"); // Adiciona a classe para aplicar os estilos no CSS
   }
 }
 

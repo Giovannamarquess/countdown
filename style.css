@@ -39,3 +39,11 @@ body {
     font-weight: bold;
   }
   
+/* Estilização para a mensagem de encerramento */
+#countdown.ended {
+  color: red; 
+  font-size: 1.5em; 
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
